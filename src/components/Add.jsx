@@ -1,4 +1,18 @@
-import { Box, Fab, Modal, Typography } from "@mui/material";
+import {
+  Image,
+  PersonAdd,
+  VideoCall,
+  EmojiEmotions,
+} from "@mui/icons-material";
+import {
+  Box,
+  Button,
+  Fab,
+  Modal,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
 import React, { useState } from "react";
 import styled from "@emotion/styled";
@@ -46,9 +60,27 @@ function Add() {
             color={"gray"}
             component="h2"
             textAlign={"center"}
+            mb={4}
           >
             Create a Post
           </Typography>
+          <TextField
+            id="standard-multiline-static"
+            fullWidth
+            multiline
+            rows={2}
+            label="What's on Your Mind?"
+            variant="standard"
+          />
+          <Stack direction="row" gap={2} marginTop={4} mb={6}>
+            <EmojiEmotions color="primary" />
+            <Image color="secondary" />
+            <VideoCall color="success" />
+            <PersonAdd color="error" />
+          </Stack>
+          <Button variant="contained" color="primary" fullWidth>
+            Post
+          </Button>
         </Box>
       </SytledModal>
     </>
