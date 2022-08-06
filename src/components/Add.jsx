@@ -41,19 +41,20 @@ function Add() {
         <AddIcon />
       </Fab>
       <SytledModal
+        bgcolor={"background.default"}
+        color={"text.primary"}
         open={open}
         onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box
-          sx={{
-            width: 500,
-            height: 300,
-            backgroundColor: "white",
-            borderRadius: 5,
-            padding: 2,
-          }}
+          width={400}
+          height={280}
+          bgcolor={"background.default"}
+          color={"text.primary"}
+          p={3}
+          borderRadius={5}
         >
           <Typography
             variant="h5"
