@@ -3,6 +3,7 @@ import Feed from "./components/Feed";
 import SideBar from "./components/SideBar";
 import AppBar from "./components/Appbar";
 import RightBar from "./components/RightBar";
+import Add from "./components/Add";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Feed />
         <RightBar />
       </Stack>
+      <Add/>
     </>
   );
 }

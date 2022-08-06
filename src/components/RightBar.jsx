@@ -25,7 +25,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 function RightBar() {
   return (
-    <Box flex="2" p={1} marginTop={3}>
+    <Box flex="2" p={1} marginTop={3} sx={{ display: { xs: "none", md: "block" } }}>
       <Box position="fixed" width="400px">
         <Box marginBottom={4}>
           <Typography variant="h5" fontWeight={300} marginBottom={1}>
