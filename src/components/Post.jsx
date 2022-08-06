@@ -1,4 +1,11 @@
-import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
+import {
+  Bookmark,
+  BookmarkBorder,
+  Favorite,
+  FavoriteBorder,
+  MoreVert,
+  Share,
+} from "@mui/icons-material";
 import {
   Avatar,
   Box,
@@ -19,7 +26,11 @@ function Post() {
       <Card>
         <CardHeader
           avatar={
-            <Avatar sx={{ bgcolor: "red" }} aria-label="recipe" src="https://mui.com/static/images/cards/contemplative-reptile.jpg">
+            <Avatar
+              sx={{ bgcolor: "red" }}
+              aria-label="recipe"
+              src="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+            >
               J
             </Avatar>
           }
@@ -46,10 +57,13 @@ function Post() {
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-          <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+            <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
           </IconButton>
           <IconButton aria-label="share">
             <Share />
+          </IconButton>
+          <IconButton aria-label="share">
+            <Checkbox icon={<BookmarkBorder />} checkedIcon={<Bookmark />} />
           </IconButton>
         </CardActions>
       </Card>

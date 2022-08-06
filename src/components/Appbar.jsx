@@ -15,21 +15,22 @@ import {
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
+  alignItems: "center",
   gap: "10px",
 });
 
-const SearchBar = styled("div")(({ theme }) => ({
+const SearchBar = styled("div")({
   backgroundColor: "white",
   padding: "2px 15px",
   borderRadius: "10px",
   width: "40%",
-}));
+});
 
-const Icons = styled("div")(({ theme }) => ({
+const Icons = styled("div")({
   display: "flex",
   alignItems: "center",
   gap: "20px",
-}));
+});
 
 function Appbar() {
   const [open, setOpen] = useState(false);

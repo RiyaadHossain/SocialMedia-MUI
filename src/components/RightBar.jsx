@@ -25,13 +25,13 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 function RightBar() {
   return (
-    <Box flex="2" p={1} marginTop={3} sx={{ display: { xs: "none", md: "block" } }}>
+    <Box flex="2" p={1} marginTop={3} sx={{ display: { xs: "none", lg: "block" } }}>
       <Box position="fixed" width="400px">
         <Box marginBottom={4}>
           <Typography variant="h5" fontWeight={300} marginBottom={1}>
             Online Friends
           </Typography>
-          <AvatarGroup max={8}>
+          <AvatarGroup max={8}  >
             <Avatar
               alt="Remy Sharp"
               src="https://mui.com/static/images/avatar/1.jpg"

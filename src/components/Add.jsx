@@ -1,3 +1,6 @@
+import styled from "@emotion/styled";
+import React, { useState } from "react";
+import { Add as AddIcon } from "@mui/icons-material";
 import {
   Image,
   PersonAdd,
@@ -13,9 +16,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Add as AddIcon } from "@mui/icons-material";
-import React, { useState } from "react";
-import styled from "@emotion/styled";
 
 const SytledModal = styled(Modal)({
   display: "flex",
@@ -35,7 +35,7 @@ function Add() {
         sx={{
           position: "fixed",
           bottom: { xs: 15, md: 30 },
-          left: { xs: "calc(50% - 25px)", md: 30 },
+          left: { xs: "calc(50% - 25px)", md: 20 },
         }}
       >
         <AddIcon />
