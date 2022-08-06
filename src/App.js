@@ -1,17 +1,18 @@
-import { AppBar, Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import Feed from "./components/Feed";
-import RightBar from "./components/RightBar";
 import SideBar from "./components/SideBar";
+import AppBar from "./components/Appbar";
+import RightBar from "./components/RightBar";
 
 function App() {
   return (
     <Box>
       <AppBar />
-      <Box>
+      <Stack direction="row" gap={1}>
         <SideBar />
         <Feed />
         <RightBar />
-      </Box>
+      </Stack>
     </Box>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
+import { Box, AppBar } from "@mui/material";
 
 function Appbar() {
-  return <div>Appbar</div>;
+  return <Box><AppBar position="static">Appbar</AppBar></Box>;
 }
 
 export default Appbar;
