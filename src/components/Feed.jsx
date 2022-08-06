@@ -1,10 +1,16 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Post from "./Post";
 
 function Feed() {
   return (
-    <Box backgroundColor="skyblue" flex="5" p={1}>
-      <Typography variant="h5">Feed</Typography>
+    <Box flex="5" p={1}>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </Box>
   );
 }
